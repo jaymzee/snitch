@@ -1,5 +1,7 @@
 #include <iostream>
-#include "Snitch.h"
+#include "snitch.h"
+
+bool Snitch::logging_enabled_ = true;
 
 Snitch::Snitch(int id) : id_(id)
 {
@@ -65,5 +67,3 @@ void Snitch::enable_log()
 {
     Snitch::logging_enabled_ = true;
 }
-
-bool Snitch::logging_enabled_ = true;
